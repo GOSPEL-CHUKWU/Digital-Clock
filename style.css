@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Layout */
+.name {
+  margin: 5rem 18rem 5rem 18rem;
+  /* padding-bottom: 6.5rem; */
+  color: white;
+  font-size: 50px;
+}
+p {
+  padding: 5px;
+  background: rgb(255, 255, 255, 0.3);
+  width: 40rem;
+  text-align: center;
+}
+/* .handle {
+  background: rgba(255, 255, 0, 0.5);
+  width: 20px;
+  height: 95px;
+  position: absolute;
+  border-bottom: 15px solid white;
+  border-radius: 0 0 10px 10px;
+}
+.right-handle {
+  top: -8.5rem;
+  left: 36.5rem;
+}
+.left-handle {
+  top: -7rem;
+  right: 46rem;
+} */
+main {
+  display: flex;
+  margin: 5rem 0 0 0;
+  padding: 0 0 10.7rem 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  justify-content: center;
+}
+.time-and-digit {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  text-align: center;
+}
+
+/* Sizing and colouring*/
+html {
+  /* color: white; */
+  background: linear-gradient(to top left, purple, rgb(85, 12, 85));
+  height: 100%;
+  max-height: 100%;
+  min-height: 10%;
+}
+.time-and-digit {
+  margin-top: 10px;
+  transition: all 0.8s ease;
+}
+h2 {
+  background: linear-gradient(to top left, rgb(8, 8, 8), rgb(80, 79, 79));
+  color: yellow;
+  font-size: 25px;
+  padding: 10px 0 10px 0;
+}
+h1 {
+  font-size: 100px;
+  background: rgb(255, 255, 255, 0.3);
+  color: rgb(216, 216, 9);
+  padding: 10px 20px 10px 20px;
+}
+.am-or-pm {
+  margin-top: 60px;
+}
+
+/* Animation */
+.hour-digit {
+  transition: all 0.6s ease-in;
+}
+.minute-digit {
+  transition: all 0.6s ease-in;
+}
+.second-digit {
+  transition: all 0.6s ease-in;
+}
+.am-or-pm {
+  transition: all 0.6s ease-in;
+}
+
+.effect {
+  transition: all 2s ease-out;
+  transform: translateX(15rem);
+}
+/* .right-handle {
+  transform: rotateZ(-10deg);
+} */
+.transition {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+.time-and-digit:hover {
+  transform: translateY(3rem);
+  transition: all 0.6s ease-in;
+}
+.hour-digit:hover {
+  background: linear-gradient(to top left, purple, rgb(85, 12, 85));
+}
+.minute-digit:hover {
+  background: linear-gradient(to top left, purple, rgb(85, 12, 85));
+}
+.second-digit:hover {
+  background: linear-gradient(to top left, purple, rgb(85, 12, 85));
+}
+.am-or-pm:hover {
+  background: linear-gradient(to top left, purple, rgb(85, 12, 85));
+  transform: translateY(3rem);
+}
+
+/* Cube Animation */
+/* .cube-animation{
+
+} */
+.yellow{
+  background: rgba(255, 255, 0, 0.5);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  /* box-shadow: rgb(73, 73, 7); */
+  animation: mymove2 2s infinite;
+}
+.white{
+  background: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  /* bottom: 0;
+  right: 0; */
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  50%{
+    box-shadow: 10px 10px 20px rgb(255, 255, 255, 0.5);;
+  }
+}
+@keyframes mymove2 {
+  50%{
+    box-shadow: 10px 10px 20px rgba(255, 255, 0, 0.5);
+  }
+}
+/* positions */
+.top-left{
+  top: 0;
+}
+.top-left-animation{
+  transform: translateX(80.6rem);
+  transition: all 1s ease-in;
+}
+
+.left-middle{
+  top: 40%;
+}
+.left-middle-animation{
+  transform: translateX(80.6rem);
+  transition: all 1s ease-in;
+}
+
+.bottom-left{
+  bottom: 0;
+}
+.bottom-left-animation{
+  transform: translateX(80.6rem);
+  transition: all 1s ease-in;
+}
+
+.bottom-middle{
+  top: 81%;
+  left: 34%;
+}
+.bottom-middle-animation{
+  transform: translateY(-39.95rem);
+  transition: all 1s ease-in;
+}
+
+.bottom-right{
+  bottom: 0;
+  left: 56%;
+}
+.bottom-right-animation{
+  transform: translateY(-39.95rem); 
+  transition: all 1s ease-in;
+}
+
+.right-middle{
+  top: 60%;
+  right: 0;
+}
+.right-middle-animation{
+  transform: translateX(-80.6rem);
+  transition: all 1s ease-in;
+}
+
+.top-right{
+  top: 20%;
+  right: 0; 
+}
+.top-right-animation{
+  transform: translateX(-80.6rem);
+  transition: all 1s ease-in;
+}
+
+.top-middle{
+top: 0;
+left: 45%;
+}
+.top-middle-animation{
+  transform: translateY(39.95rem);
+  transition: all 1s ease-in;
+  }
+
+.hidden{
+  display: none;
+}
